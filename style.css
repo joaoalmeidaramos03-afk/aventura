@@ -1,9 +1,7 @@
-/* codigo omitido */
-
 body {
     background-color: #1D4221;
     color: white;
-     font-family: "Black Ops One", system-ui;
+    font-family: "Black Ops One", system-ui;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,4 +13,9 @@ button {
     background-color: #0011ff;
     color: white;
      font-family: "Black Ops One", system-ui;
+}
+button{
+    background-color:;
+    color: white;
+    font-family: 
 }

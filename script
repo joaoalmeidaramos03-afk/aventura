@@ -1,0 +1,32 @@
+const nomes = ["Giulliana", "Amanda", "Maria", "Jackeline"];
+
+function aleatorio(lista) {
+    const posicao = Math.floor(Math.random() * lista.length);
+    return lista[posicao];
+}
+
+const nome = aleatorio(nomes);
+
+const perguntas = [
+    {
+        texto: "Você está prestes a enfrentar um desafio. Como você se prepara?",
+        opcoes: [
+            {
+                texto: "Eu pesquiso e estudo tudo sobre o desafio antes de começar.",
+                respostas: ["Você é uma pessoa que valoriza o conhecimento e a preparação.", "Ravenclaw"]
+            },
+            {
+                texto: "Eu me jogo de cabeça e confio na minha coragem para superar qualquer obstáculo.",
+                respostas: ["Você é alguém corajoso e destemido, pronto para enfrentar qualquer coisa.", "Gryffindor"] // (O texto final está cortado, mas indica Grifinória)
+            },
+            {
+                texto: "Eu busco estratégias e planejo todas as etapas com cuidado.",
+                respostas: ["Você é estratégico e sempre pensa nos melhores meios para alcançar seu...", "Slytherin"] // (Texto cortado, indica Sonserina)
+            },
+            {
+                texto: "Eu procuro ajuda e conselho de amigos para me sentir mais confiante.",
+                respostas: ["Você valoriza a lealdade e o apoio das pessoas ao seu redor.", "Hufflepuff"] // (Texto cortado, indica Lufa-Lufa)
+            }
+        ]
+    }
+]

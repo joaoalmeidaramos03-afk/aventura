@@ -1,21 +1,11 @@
-body {
-    background-color: #1D4221;
-    color: white;
-    font-family: "Black Ops One", system-ui;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 700px;
-    margin: 0;
-}
+bconst avanca = document.querySelectorAll('.btn-proximo');
 
-button {
-    background-color: #0011ff;
-    color: white;
-     font-family: "Black Ops One", system-ui;
-}
-button{
-    background-color:;
-    color: white;
-    font-family: 
-}
+avanca.forEach(button => {
+    button.addEventListener('click', function(){
+        const atual = document.querySelector('.ativo');
+        const proximoPasso = 'passo-' + this.getAttribute('data-proximo');
+
+        atual.classList.remove('ativo');
+        document.getElementById(proximoPasso).classList.add('ativo');
+    })
+})

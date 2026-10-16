@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A Cidade Perdida das Araucárias</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Em Busca da Cidade Perdida</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="game-container">
+<header>
+<h1>Em Busca da Cidade Perdida de Krato</h1>
+</header>
 
-  <div class="game-container">
-    <header>
-      <h1>🌲 A Cidade Perdida</h1>
-      <div class="status-bar">
-        <span class="hp-badge">❤️ HP: <span id="hp-val">100</span></span>
-        <span class="inventory-badge">🎒 <span id="inv-val">Nenhum</span></span>
-      </div>
-    </header>
+<main>
+<div id="story-text" class="story-box">
+<!-- O texto da história aparece aqui -->
+</div>
 
-    <main>
-      <div id="story" class="story-box">Carregando história...</div>
-      <div id="options" class="options-container"></div>
-    </main>
-  </div>
+<div id="options-container" class="options-box">
+<!-- Os botões de escolha aparecem aqui -->
+</div>
+</main>
 
-  <script src="script.js"></script>
+<footer>
+<button id="restart-btn" class="restart-btn hidden">Jogar Novamente</button>
+</footer>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
-

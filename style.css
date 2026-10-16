@@ -1,11 +1,15 @@
-bconst avanca = document.querySelectorAll('.btn-proximo');
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #e0e0e0;
+}
 
-avanca.forEach(button => {
-    button.addEventListener('click', function(){
-        const atual = document.querySelector('.ativo');
-        const proximoPasso = 'passo-' + this.getAttribute('data-proximo');
-
-        atual.classList.remove('ativo');
-        document.getElementById(proximoPasso).classList.add('ativo');
-    })
-})
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #008cba;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

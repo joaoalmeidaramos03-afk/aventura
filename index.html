@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
-    <title>Em busca da cidade perdida</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Cidade Perdida das Araucárias</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <main>
-        <div class="pass        <div class="passpass4o4o ativo" id="passo-0">pass4o4o ativo" id="passo-0">
-            <p>Um dia desses, dentro de um livro da biblioteca da escola, descobri uma carta antiga sobre uma cidade perdida, escondida por riquezas e belezas naturais. Nessa carta, a autora deixa algumas pistas para encontrar essa cidade e eu decidi segui-las!</p>
-            <button class="btn-proximo" data-proximo="1">Rio de Janeiro</button>
-            <button class="btn-proximo" data-proximo="2">Pernambuco</button>
-        </div>
-        <div class="passo" id="passo-1">
-            <p>Você começa sua jornada no Rio de Janeiro, subindo o Pico da Tijuca ao amanhecer para encontrar a primeira pista.</p>
-            <button class="btn-proximo" data-proximo="3">Procurar a pista no topo do pico</button>
-            <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
-        </div>
-       </main>
-       <script src="script.js"></script>
-    </body>
-   </html>
+
+  <div class="game-container">
+    <header>
+      <h1>🌲 A Cidade Perdida</h1>
+      <div class="status-bar">
+        <span class="hp-badge">❤️ HP: <span id="hp-val">100</span></span>
+        <span class="inventory-badge">🎒 <span id="inv-val">Nenhum</span></span>
+      </div>
+    </header>
+
+    <main>
+      <div id="story" class="story-box">Carregando história...</div>
+      <div id="options" class="options-container"></div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
